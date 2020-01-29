@@ -2,10 +2,11 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>WeatherApp</title>
+        <title>Weather.Me</title>
 
         <!-- Latest compiled and minified CSS -->
         <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css?family=Comfortaa&display=swap" rel="stylesheet"> 
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     </head>
     <body>
@@ -41,13 +42,15 @@
             <div class="row">
                 <div class="col-md-12">
                     <h3 class="text-center texr-primary">Find out if you need your sunblock, or a jacket:</h3>
+                    <span id="error" class='text-center'></span>
                 </div>
                 <div class="row form-group form-inline" id="city">
-                    <input type="text" name="city" id="city" class="form-control" placeholder="Search your city">
+                    <input type="text" name="city" id="cityInput" class="form-control" placeholder="Search your city" >
                     <button id="submittedCity" class="btn btn-primary-search">Search</button>
                 </div>
+                
             </div>
-
+            <div id="showWeather"></div>
         </div>
 
 
@@ -56,5 +59,7 @@
 
 
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script src='text/javascript' src ='config.js'></script>
+        <script src="weather.js"></script>
     </body>
 </html>
