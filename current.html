@@ -1,0 +1,65 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Weather.Me</title>
+
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css?family=Comfortaa&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    </head>
+    <body>
+        <nav class="navbar navbar-default" id="nav_bar">
+            <div class="container">
+                <div class="navbar-header">
+                    <a href="index.html" class="navbar-brand navbar-link weather">
+                        <img src="logo.png" class= "img-responsive" id="logo" alt=""><strong>Weather.Me</strong>
+                    </a>
+                    <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="navcol">
+                        <span class="sr-only">Toggle Navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse" id="navcol">
+                    <ul class="nav navbar-nav navbar-right" id="nav_list">
+                        <li><a href="current.html">Current</a></li>
+                        <li><a href="forecast.html">Forecast</a></li>
+                        <li><a href="https://www.openweathermap.org/" target="_blank">Open Weather Map</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </nav>
+
+        <div class="jumbotron" style="margin-bottom: 0px; background-color: blue; color: #fffdd0">
+            <h2 class ="text-center" style="font-size:50px; font-weight:600;">Get Current Weather Information</h2>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h3 class="text-center texr-primary">Find out if you need your sunblock, or a jacket:</h3>
+                    <span id="error" class='text-center'></span>
+                </div>
+                <div class="row form-group form-inline" id="city">
+                    <input type="text" name="city" id="cityInput" class="form-control" placeholder="Search your city" >
+                    <button id="submittedCity" class="btn btn-primary-search">Search</button>
+                </div>
+                
+            </div>
+            <div id="showWeather"></div>
+        </div>
+
+
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script type='text/javascript' src ='config.js'></script>
+        <script src="weather.js"></script>
+    </body>
+</html>

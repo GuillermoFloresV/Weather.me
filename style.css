@@ -1,0 +1,82 @@
+body{
+    font-family: 'Comfortaa', cursive;
+    background-color: white;
+    font-size: 20px;
+    margin: 0;
+    padding: 0; 
+}
+
+#nav_bar{
+    /*This doesnt allow us to add something with no space in between the nav
+    bar and our body*/
+    margin-bottom: 0px;
+    padding: 0;
+    background-color: white; 
+    border: none;  
+}
+/*color and stuff for our 'Weather app' in our nav bar */
+.weather{
+    color: blue !important;
+    font-size: 25px;
+    font-weight: 600;
+}
+/*Accesses the child element (li) and the child of the child (a) */
+#nav_list > li > a{
+    color: blue !important;
+    font-weight: 500;
+}
+
+#logo{
+    max-height: 42px;
+    margin-right: 8px;
+    display: inline-block;
+    margin-top: -15px;
+}
+
+#headRow{
+    background: url(bg.jpg) no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 450px;
+    margin-top: 0px;
+}
+
+#HeaderText{
+    color:white;
+    padding-top: 30px;
+    font-size: 42px;
+}
+#HeaderText2{
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+ul#list_item{
+    color: white;
+    font-size: 30px;
+    text-align: center;
+}
+
+#city{
+    width: 60%;
+    margin: auto;
+    text-align: center;
+}
+
+input[type="text"]
+{
+    height: 40%;
+    font-size: 20px;
+}
+
+#submittedCity{
+    height: 40px;
+}
+#error-city
+{
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 10px;
+}
